@@ -1,0 +1,98 @@
+@charset "UTF-8";
+@import url(reset.css); 
+
+#content_wrap {
+    width: 100%;
+    background: #f4f5f9;
+}
+/* 타이틀 */
+#content_wrap > .main_content {
+    width: 1024px;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+    background: #f4f5f9;
+}
+
+#content_wrap > .main_content > .object_tit {
+    padding-top: 20px;
+}
+
+#content_wrap > .main_content > .object_tit > h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 3em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/* 컬러차트 */
+#content_wrap > .main_content .color_chart {
+    width: 50%;
+    margin: 25px auto;
+}
+
+
+/* 이미지 */
+#content_wrap > .main_content > .object_img {
+    margin: 20px auto;
+    display: block;
+}
+
+#content_wrap > .main_content > .object_img > .columns {
+    /* 컬럼 개수가 2개로 유지됨  
+    프리픽스 함께 써야함! (지원하지 않는 웹브라우저를 위해!)
+    */
+    -webkit-column-count: 2;
+    -webkit-column-gap: 10px;
+    -moz-column-count: 2;
+    -moz-column-gap: 10px;
+
+    column-count: 2;    
+    column-gap: 10px;
+}
+
+#content_wrap > .main_content .columns > .columns_img {
+    display: inline-block;
+}
+
+#content_wrap > .main_content .columns > .columns_img img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* 미디어 쿼리 */
+@media screen and (max-width: 767px) {
+    #content_wrap > .main_content {
+        width: 90vw;
+    }
+
+    #content_wrap > .main_content > .object_img > .columns {
+            -webkit-column-count: 2;
+            -moz-column-count: 2;
+            column-count: 2;    
+        }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #content_wrap > .main_content {
+        width: 90vw;
+    }
+
+    #content_wrap > .main_content > .object_img > .columns {
+            -webkit-column-count: 3;
+            -moz-column-count: 3;
+            column-count: 3;    
+        }
+    }
+    
+@media screen and (min-width: 1024px) {
+    #content_wrap > .main_content {
+        width: 1024px;
+    }
+
+    #content_wrap > .main_content > .object_img > .columns {
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;    
+    }
+}

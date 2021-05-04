@@ -1,0 +1,121 @@
+@charset "UTF-8";
+@import url(reset.css); 
+
+.wrapper_cover {
+    width: 100%;
+    height: 100%;
+    background: #f4f5f9;
+    opacity: 0.9;
+    z-index: 2;
+}
+
+#content_wrap {
+    width: 100%;
+}
+
+/* 미술관 역사(history) 텍스트 */
+#content_wrap > .history {
+    width: 1024px;
+    margin: 10px auto;
+}
+
+.history > .history_txt {
+    margin: 20px auto;
+}
+
+.history > .history_txt .boxs {
+    margin: 30px 10px 0px 10px;
+}
+
+.history > .history_txt .box_1 h2, .history > .history_txt .box_4 h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.history > .history_txt .box_1 p, .history > .history_txt .box_4 p {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.history > .history_txt .box_2 h3, .history > .history_txt .box_3 h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    border-bottom: 1px solid  #252c41;
+}
+
+.history > .history_txt .box_2 p, .history > .history_txt .box_3 p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5em;
+    margin-top: 10px;
+}
+
+/* 미디어 쿼리 */
+@media screen and (max-width: 767px) {
+    #content_wrap > .history {
+        width: 90vw;
+    }
+
+    .history > .history_txt .box_1 h2, .history > .history_txt .box_4 h2 {
+        width: 80vw;
+        margin-bottom: 30px;
+        margin: 0 auto;
+    }
+    
+    .history > .history_txt .box_1 p, .history > .history_txt .box_4 p {
+        width: 80vw;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    
+    .history > .history_txt .box_2 h3, .history > .history_txt .box_3 h3 {
+        width: 80vw;
+        margin: 0 auto;
+    }
+    
+    .history > .history_txt .box_2 p, .history > .history_txt .box_3 p {
+        width: 80vw;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #content_wrap > .history {
+        width: 90vw;
+    }
+
+    .history > .history_txt .box_1 h2, .history > .history_txt .box_4 h2 {
+        width: 80vw;
+        margin-bottom: 30px;
+        margin: 0 auto;
+    }
+    
+    .history > .history_txt .box_1 p, .history > .history_txt .box_4 p {
+        width: 80vw;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    
+    .history > .history_txt .box_2 h3, .history > .history_txt .box_3 h3 {
+        width: 80vw;
+        margin: 0 auto;
+    }
+    
+    .history > .history_txt .box_2 p, .history > .history_txt .box_3 p {
+        width: 80vw;
+        margin: 0 auto;
+    }
+}
+    
+@media screen and (min-width: 1024px) {
+    .video_container > .history {
+        width: 1024px;
+    }
+}

@@ -1,0 +1,131 @@
+@charset "UTF-8";
+@import url(reset.css); 
+
+#content_wrap {
+    width: 100%;
+}
+
+#content_wrap > .main_content {
+    width: 1024px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#content_wrap > .main_content > .object_img {
+    float: left;
+    width: 49%;
+    margin: 20px auto;
+}
+
+#content_wrap > .main_content > .object_description {
+    float: left;
+    width: 49%;
+    height: 500px;
+    margin: 20px auto;
+}
+
+.object_description > .description {
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.object_description > .object_tit {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.object_description > .object_tit > h2 {
+    padding-left: 40px;
+    font-family: 'Fraunces', serif;
+    font-size: 2.5em;
+    font-weight: bolder;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.object_description > .description >  .des_left {
+    float: left;
+    width: 20%;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+.object_description > .description >  .des_left > p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: right;
+}
+
+.object_description > .description >  .des_right {
+    float: left;
+    width: 70%;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+.object_description > .description >  .des_right > p {
+    padding-top: 3px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+}
+
+/* 미디어 쿼리 */
+@media screen and (max-width: 767px) {
+    #content_wrap > .main_content {
+        width: 90vw;
+        min-width: 300px;
+    }
+
+    #content_wrap > .main_content > .object_img {
+        float: none;
+    }
+
+    #content_wrap > .main_content > .object_description {
+        float: none;
+        width: 90vw;
+        min-width: 300px;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .object_description > .object_tit {
+        margin: 0px auto;
+        margin-bottom: 10px;
+    }
+
+    .object_description > .object_tit > h2 {
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #content_wrap > .main_content {
+        width: 90vw;
+    }
+
+    #content_wrap > .main_content > .object_img {
+        float: none;
+    }
+
+    #content_wrap > .main_content > .object_description {
+        float: none;
+        width: 90vw;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .object_description > .object_tit {
+        margin: 0 auto;
+    }
+
+    .object_description > .object_tit > h2 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+}
+    
+@media screen and (min-width: 1024px) {
+    
+}

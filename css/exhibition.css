@@ -1,0 +1,242 @@
+@charset "UTF-8";
+@import url(reset.css); 
+
+#content_wrap {
+    width: 100%;
+}
+
+/* 현재전시 */
+#content_wrap > .main_content {
+    width: 100%;
+    background: #f4f5f9;
+}
+
+#content_wrap > .main_content > .current_ex {
+    width: 1024px;
+    margin: 0 auto;
+    background: #f4f5f9;
+    height: auto;
+}
+
+#content_wrap > .main_content > .current_ex > .ex_tit {
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+#content_wrap > .main_content > .current_ex > .ex_tit > h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#content_wrap > .main_content .slider_wrap {
+    margin: 20px auto;
+    height: 100%;
+    /* position: relative; */
+}
+
+#content_wrap > .main_content .multiple_slider img {
+    margin: 0 auto;
+    width: 200px;
+    height: 300px;
+}
+
+#content_wrap > .main_content .multiple_slider h2 {
+    margin: 20px 10px;
+    height: 40px;
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#content_wrap > .main_content .multiple_slider p {
+    margin: 0 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: 1.1em;
+    text-align: right;
+}
+
+#content_wrap > .main_content .multiple_slider p:first-child {
+    margin-top: 25px;
+}
+
+#content_wrap > .main_content .multiple_slider p:last-child {
+    margin-bottom: 5px;
+}
+
+/* 
+.multiple .bx-prev, .multiple .bx-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.multiple .bx-prev {
+    right: calc(100% - 40px);
+}
+
+.multiple .bx-next {
+    left: calc(100% - 40px);
+}
+
+.multiple .controls span a {
+    width: 60px;
+    height: 60px;
+    background: no-repeat;
+    background-size: 100%;
+    display: block;
+    text-indent: -999em;
+}
+
+.multiple .controls .prev a {
+    background-image: url(../images/angle-left-solid.svg);
+}
+
+.multiple .controls .next a {
+    background-image: url(../images/angle-right-solid.svg);
+} */
+
+/* 예정된 전시 */
+#content_wrap > .sub_content {
+    width: 100%;
+    margin: 30px auto;
+}
+
+#content_wrap > .sub_content > .upcoming_ex {
+    width: 1024px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#content_wrap > .sub_content > .upcoming_ex > .ex_tit {
+    float: left;
+    width: 20%;
+    margin: 30px 10px;
+}
+
+#content_wrap > .sub_content > .upcoming_ex > .ex_tit > h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: right;
+}
+
+#content_wrap > .sub_content > .upcoming_ex > .ex_plan {
+    margin: 0 auto;
+}
+
+#content_wrap > .sub_content > .upcoming_ex > .ex_plan > .upcoming_plan {
+    float: left;
+    width: 33.3%;
+    height: 80px;
+    margin: 30px 10px;
+    padding: 15px 15px 15px 0px;
+    border-right: 1px solid #252c41;
+    border-bottom: 1px solid #252c41;
+}
+
+
+#content_wrap > .sub_content > .upcoming_ex .upcoming_plan > h3 {
+    height: 50px;
+    font-family: 'Fraunces', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: right;
+}
+
+#content_wrap > .sub_content > .upcoming_ex .upcoming_plan > p {
+    margin-top: 10px;
+    font-family: 'Fraunces', serif;
+    font-size: 1.2em;
+    text-align: right;
+}
+
+
+/* 미디어 쿼리 */
+@media screen and (max-width: 767px) {
+    #content_wrap > .main_content > .current_ex {
+        width: 90vw;
+    }
+
+    #content_wrap > .main_content > .current_ex > .ex_tit {
+        width: 90vw;
+    }
+
+    #content_wrap > .main_content > .current_ex > .slider_wrap {
+        width: 90%;
+    }
+
+    #content_wrap > .sub_content > .upcoming_ex {
+        width: 90vw;
+        height: auto;
+    }
+
+    #content_wrap > .sub_content > .upcoming_ex > .ex_tit {
+        float: none;
+        width: 80vw;
+        margin: 30px auto;
+    }
+    
+    #content_wrap > .sub_content > .upcoming_ex > .ex_tit > h2 {
+        text-align: center;
+    }
+    
+    #content_wrap > .sub_content > .upcoming_ex > .ex_plan > .upcoming_plan {
+        float: none;
+        width: 80vw;
+        margin: 30px auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #content_wrap > .main_content > .current_ex {
+        width: 90vw;
+    }
+
+    #content_wrap > .main_content > .current_ex > .ex_tit {
+        width: 90vw;
+    }
+
+    #content_wrap > .main_content > .current_ex > .slider_wrap {
+        width: 90%;
+    }
+
+    #content_wrap > .sub_content > .upcoming_ex {
+        width: 90vw;
+        height: auto;
+    }
+
+    #content_wrap > .sub_content > .upcoming_ex > .ex_tit {
+        float: none;
+        width: 80vw;
+        margin: 30px auto;
+    }
+    
+    #content_wrap > .sub_content > .upcoming_ex > .ex_tit > h2 {
+        text-align: center;
+    }
+    
+    #content_wrap > .sub_content > .upcoming_ex > .ex_plan > .upcoming_plan {
+        float: left;
+        width: 40%;
+    }
+}
+    
+@media screen and (min-width: 1024px) {
+    #content_wrap > .main_content > .current_ex {
+        width: 1024px;
+    }
+
+    #content_wrap > .sub_content > .upcoming_ex {
+        width: 1024px;
+        height: 200px;
+    }
+
+    #content_wrap > .main_content > .current_ex > .slider_wrap {
+        max-width: 1024px;
+    }
+}

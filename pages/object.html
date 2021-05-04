@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvard Art Museums</title>
+    <!-- css 링크 -->
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/object.css">
+</head>
+<body>
+    <div id="header_wrap">
+        <header class="main_header">
+            <div id="title">
+                <a href="../index.html"><img src="../images/top_logo.svg" alt="Harvard Art Museums"></a>
+            </div>
+            <nav class="nav_wrap">
+                <ul class="gnb">
+                    <li><a href="../pages/history.html">History</a></li>
+                    <li><a href="../pages/visit.html">Visit</a></li>
+                    <li><a href="../pages/exhibition.html">Exhibition</a></li>
+                    <li><a href="../pages/object.html">Object</a></li>
+                </ul>
+                <div class="trigger">
+                    <a href="#" class="mobile hamburger">
+                        <img src="../images/bars-solid.svg" alt="햄버거바">
+                    </a>
+                    <a href="#" class="mobile close">
+                        <img src="../images/times-solid.svg" alt="닫기">
+                    </a>
+                </div>
+
+            </nav>
+        </header>
+    </div>
+    <div id="content_wrap">
+        <div class="main_content">
+            <div class="object_tit">
+                <h2>Object</h2>
+            </div>
+            <div class="color_chart">
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class="object_img">
+                <div class="columns">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer_wrap">
+        <footer id="main_footer">
+            <ul class="sns">
+                <li><a href="https://www.instagram.com/harvardartmuseums/">instargram</a></li>
+                <li><a href="https://twitter.com/harvartmuseums">twitter</a></li>
+                <li><a href="https://vimeo.com/harvardartmuseums/videos">vimeo</a></li>
+                <li><a href="https://www.facebook.com/harvardartmuseums">facebook</a></li>
+            </ul>
+            <div class="bottom_info">
+                <div class="bottom_left">
+                    <img src="../images/bottom_logo.svg" alt="로고">
+                </div>
+                <div class="bottom_right">
+                    <div class="newsletter_box">
+                        <a href="#">Newsletter</a>
+                    </div>
+                    <p>Sign up to get the latest news</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- 모바일메뉴 -->
+    <div class="mobile_menu">
+        <ul class="mobile_gnb">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/history.html">History</a></li>
+            <li><a href="../pages/visit.html">Visit</a></li>
+            <li><a href="../pages/exhibition.html">Exhibition</a></li>
+            <li><a href="../pages/object.html">Object</a></li>
+        </ul>
+    </div>
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <!-- 라이브러리 -->
+    <script src="../library/chart.min.js"></script>
+    <!-- js파일 -->
+    <script src="../js/common.js"></script>
+    <script src="../js/object.js"></script>
+</body>
+
+</html>
