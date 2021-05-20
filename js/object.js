@@ -7,7 +7,7 @@ objectUrl += "&apikey=a35af484-c468-4ceb-8054-5aa044a7f8b6";
 objectUrl += "&size=100";
 objectUrl += "&page=3700";
 // console.log("color: " + encodeColor);
-console.log("url: " + objectUrl);
+// console.log("url: " + objectUrl);
 
 $.ajax({
     type: "GET",
@@ -15,14 +15,14 @@ $.ajax({
     dataType: "json",
     async: false,
     success: function (objData) {
-        console.log(objData);
+        // console.log(objData);
         var objRecords = objData.records;
         var allObjColor = [];
         var objColor = [];
         var colorData = [];
         for (var i = 0; i < objRecords.length; i++) {
             if (objRecords[i].colors == undefined) {
-                console.log("error");
+                // console.log("error");
                 continue;
             }
 
@@ -30,14 +30,14 @@ $.ajax({
                 allObjColor[i] = objRecords[i].colors[j].color;
             }
         }
-        console.log(allObjColor);
+        // console.log(allObjColor);
 
         //중복되는 색 제거 (마지막에 오기)
         objColor = allObjColor.filter(function (item, pos, self) {
             return self.indexOf(item) == pos;
         });
 
-        console.log(objColor);
+        // console.log(objColor);
 
         for (var i = 0; i < objColor.length; i++) {
             colorData[i] = 1;  // chart.js에 색 비율 1:1로 지정하기 위해서
@@ -97,7 +97,7 @@ $.ajax({
             for (var i = 0; i < objRecords.length; i++) {
 
                 if (objRecords[i].colors == undefined) {
-                    console.log("error: " + i);
+                    // console.log("error: " + i);
                     continue;
                 }
                 for (var j = 0; j < objRecords[i].colors.length; j++) {
@@ -108,10 +108,10 @@ $.ajax({
                 }
             }
 
-            console.log(urlArr);
-            console.log(imgColorUrl);
-            console.log(array);
-            console.log("color hex code: " + array[0].element.options.backgroundColor);
+            // console.log(urlArr);
+            // console.log(imgColorUrl);
+            // console.log(array);
+            // console.log("color hex code: " + array[0].element.options.backgroundColor);
             
             for(var i = 0; i < urlArr.length; i++) {
                 

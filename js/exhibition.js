@@ -20,7 +20,7 @@ $(function(){
     var currentStatus = "current";
     exhibitionUrl += "?status=" + currentStatus;
     exhibitionUrl += "&apikey=a35af484-c468-4ceb-8054-5aa044a7f8b6";
-    console.log("url: " + exhibitionUrl);
+    // console.log("url: " + exhibitionUrl);
     
     $.ajax({
         type: "GET",
@@ -74,7 +74,7 @@ $(function(){
     var upcomingStatus = "upcoming";
     exhibitionUrl += "?status=" + upcomingStatus;
     exhibitionUrl += "&apikey=a35af484-c468-4ceb-8054-5aa044a7f8b6";
-    console.log("url: " + exhibitionUrl);
+    // console.log("url: " + exhibitionUrl);
     
     $.ajax({
         type: "GET",
