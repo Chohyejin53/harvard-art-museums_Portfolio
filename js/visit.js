@@ -20,7 +20,7 @@ var currentMonth = today.getMonth() + 1;
 spectrumUrl += "?q=month:" + currentMonth;
 spectrumUrl += "&apikey=a35af484-c468-4ceb-8054-5aa044a7f8b6";
 spectrumUrl += "&size=50";
-console.log("url: " + spectrumUrl);
+// console.log("url: " + spectrumUrl);
     
     $.ajax({
         type: "GET",
