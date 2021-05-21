@@ -53,16 +53,16 @@
 
 var tag = "";
 var mainLogoImg = [];
-mainLogoImg[0] = "../images/main_img/main_img1.jpg";
-mainLogoImg[1] = "../images/main_img/main_img2.jpg";
-mainLogoImg[2] = "../images/main_img/main_img3.jpg";
-mainLogoImg[3] = "../images/main_img/main_img4.jpg";
-mainLogoImg[4] = "../images/main_img/main_img5.jpg";
-mainLogoImg[5] = "../images/main_img/main_img6.jpg";
-mainLogoImg[6] = "../images/main_img/main_img7.jpg";
-mainLogoImg[7] = "../images/main_img/main_img8.jpg";
-mainLogoImg[8] = "../images/main_img/main_img9.jpg";
-mainLogoImg[9] = "../images/main_img/main_img10.jpg";
+mainLogoImg[0] = "images/main_img/main_img1.jpg";
+mainLogoImg[1] = "images/main_img/main_img2.jpg";
+mainLogoImg[2] = "images/main_img/main_img3.jpg";
+mainLogoImg[3] = "images/main_img/main_img4.jpg";
+mainLogoImg[4] = "images/main_img/main_img5.jpg";
+mainLogoImg[5] = "images/main_img/main_img6.jpg";
+mainLogoImg[6] = "images/main_img/main_img7.jpg";
+mainLogoImg[7] = "images/main_img/main_img8.jpg";
+mainLogoImg[8] = "images/main_img/main_img9.jpg";
+mainLogoImg[9] = "images/main_img/main_img10.jpg";
 
 var randomNum = Math.round(Math.random()*mainLogoImg.length);
 
