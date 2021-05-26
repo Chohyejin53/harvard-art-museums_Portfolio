@@ -1,10 +1,70 @@
 @charset "UTF-8";
 @import url(reset.css); 
 
+/* 작가 리스트 */
+.list_wrap {
+    width: 100%;
+    height: 40px;
+    margin: 20px auto;
+    background-color: #f4f5f9;
+}
+
+.list_wrap > .artist_list {
+    width: 1024px;
+    height: 40px;
+    margin: 20px auto;
+    background-color: #f4f5f9;
+}
+.list_wrap > .artist_list > ul {
+    overflow: hidden;
+}
+
+.list_wrap > .artist_list > ul > li {
+    float: left;
+    width: 23%;
+    text-align: center;
+    color: #252c41;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+/* 콘텐츠 */
 #content_wrap {
     width: 100%;
 }
+/* 작가소개 */
+#content_wrap > .artist_introduce {
+    width: 1024px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
 
+#content_wrap > .artist_introduce > .artist {
+    text-align: center;
+}
+
+#content_wrap > .artist_introduce > .monet, .gogh, .paul, .degas {
+    display: block;
+}
+
+#content_wrap > .artist_introduce > .artist > h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 2em;
+    font-weight: bolder;
+    margin: 10px auto;
+}
+
+#content_wrap > .artist_introduce > .artist > p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+
+/* 작품 소개 */
 #content_wrap > .main_content {
     width: 1024px;
     margin: 0 auto;
